@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: Build Kernel by ${{ github.actor }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4
     - name: Setup Configuration
@@ -139,4 +139,3 @@ jobs:
         path: |
           kernel_workspace/boot.img
           kernel_workspace/boot_permissive.img
-
