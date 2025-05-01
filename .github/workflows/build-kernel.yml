@@ -78,7 +78,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace/android-kernel
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-        echo "UPLOADNAME=-KernelSU" >> $GITHUB_ENV
+        echo "UPLOADNAME=v0.9.5" >> $GITHUB_ENV
 
     - name: Build kernel
       run: |
